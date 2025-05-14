@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #825f79;
+}
+
+header {
+  background-color: #c5cd37;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #8da71b;
+  color: rgb(205, 161, 161);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #c1ee1e;
+}
+#center-gif {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50; /* This will place it above the game but below the start screen */
+  pointer-events: none; /* This makes it so clicks pass through the GIF */
+}
