@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
 body {
   margin: 0;
   font-family: sans-serif;
@@ -31,11 +33,73 @@ header {
 .button:hover {
   background-color: #c1ee1e;
 }
+
 #center-gif {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 50; /* This will place it above the game but below the start screen */
-  pointer-events: none; /* This makes it so clicks pass through the GIF */
+  z-index: 50;
+  pointer-events: none;
+}
+
+/* Dot default */
+.online-status {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #ff0000;
+  transition: all 0.5s ease;
+}
+
+/* Green active dot */
+.online-status.green {
+  background-color: #28a745;
+  box-shadow: 0 0 15px #28a745;
+}
+
+/* Online text default */
+.online-text {
+  display: none;
+  font-size: 2rem;
+  font-family: "Orbitron", sans-serif;
+  color: #ff0000;
+  text-transform: uppercase;
+  margin-left: 40px;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Visible Online text */
+.online-text.visible {
+  display: inline-block;
+  opacity: 1;
+  transform: scale(1.2);
+  color: #28a745;
+}
+
+/* Header animation */
+.piyaz-header {
+  font-size: 4.5rem;
+  font-family: "Orbitron", sans-serif;
+  color: #333;
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  position: relative;
+  animation: moveIn 2.5s ease-out;
+}
+
+@keyframes moveIn {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
