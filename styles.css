@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: #825f79;
+  background-color: #533475;
 }
 
 header {
@@ -19,19 +19,23 @@ header {
   margin-top: 50px;
 }
 
-.button {
+/* NEW BUTTON STYLES */
+.gif-button {
   display: inline-block;
-  padding: 10px 20px;
-  font-size: 1rem;
-  background-color: #8da71b;
-  color: rgb(205, 161, 161);
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
-.button:hover {
-  background-color: #c1ee1e;
+.gif-button:hover {
+  transform: scale(1.1);
+}
+
+.button-gif-only {
+  width: 400px; /* adjust as needed */
+  height: auto;
+  display: block;
+  border-radius: 12px;
 }
 
 #center-gif {
