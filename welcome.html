@@ -3,49 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to Piyaz</title>
+  <title>GIF Layout</title>
   <style>
+    /* Full page pink background */
     body {
+      margin: 0;
       background-image: url('gifs/pink_background.gif');
       background-repeat: repeat;
       background-size: auto;
-      background-position: top left;
-      background-attachment: scroll;
-      margin: 0;
       font-family: Arial, sans-serif;
-      color: #333;
-      text-align: center;
     }
 
+    /* Center the content vertically */
     .content {
-      padding: 2% 20px;
-      background-color: rgba(255, 255, 255, 0.8); /* readability box */
-      max-width: 800px;
-      margin: 0 auto;
-      border-radius: 15px;
-    }
-
-        .gif-box {
+      padding: 50px 0;
       display: flex;
       justify-content: center;
-      margin-top: 40px;
-      }
+    }
 
-        .gif-box img {
-      width: 400px; /* Adjust size here */
+    /* Container for all gifs */
+    .gif-box {
+      position: relative;
+      width: 700px;
+      height: 500px;
+    }
+
+    /* Main girl gif */
+    .main-girl {
+      width: 100%;
       height: auto;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      }
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      position: relative;
+      z-index: 1;
+    }
 
+    /* Floating decorative gifs */
+    .pink-heart {
+      position: absolute;
+      top: -40px;
+      left: -70px;
+      width: 200px;
+      z-index: 2;
+    }
+
+    .pink-star {
+      position: absolute;
+      top: -10px;
+      right: 480px;
+      width: 240px;
+      z-index: 2;
+    }
+
+    .welcome {
+    position: absolute;
+    bottom: 420px;
+    right: 150px;
+    width: 360px;
+    z-index: 2;
+    } 
+
+    .nokia {
+      position: absolute;
+      bottom: 112px;
+      left: 397px;
+      width: 480px;
+      z-index: 2;
+    }
+
+    .cat-paws {
+      position: absolute;
+      bottom: 160px;
+      right: 294px;
+      width: 210px;
+      z-index: 2;
+    }
   </style>
 </head>
 <body>
-
-  <!-- Centered GIF box at the top -->
-  <div class="gif-box">
-    <img src="gifs/blu_hair_girl.gif" alt="Blue-haired girl" />
+  <div class="content">
+    <div class="gif-box">
+      <img class="pink-heart" src="img/pink heart.png" alt="Pink heart" />
+      <img class="pink-star" src="gifs/pink star.gif" alt="Pink star" />
+      <img class="nokia" src="gifs/nokia.gif" alt="Nokia" />
+      <img class="cat-paws" src="gifs/cat paws.gif" alt="Cat paws" />
+      <img class="main-girl" src="gifs/blu_hair_girl.gif" alt="Blue-haired girl" />
+      <img class="welcome" src="gifs/welcome.gif" alt="welcome" />
+    </div>
   </div>
-
 </body>
 </html>
