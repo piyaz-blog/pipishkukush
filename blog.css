@@ -78,7 +78,7 @@ body {
 }
 
 .entry img {
-  width: 120px; /* ✅ adjust blog image size here */
+  width: 180px; /* ✅ adjust blog image size here */
   height: auto;
   border-radius: 8px;
 }
