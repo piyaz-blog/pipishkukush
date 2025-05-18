@@ -71,3 +71,11 @@ body {
   width: 20px;
   z-index: 2;
 }
+
+.lavalamp {
+  position: absolute;
+  bottom: 112px;
+  left: 397px;
+  width: 480px;
+  z-index: 2;
+}
