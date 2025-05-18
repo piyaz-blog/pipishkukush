@@ -1,0 +1,78 @@
+/* Set default page background */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("gifs/green spark.gif");
+  background-repeat: repeat;
+  background-size: 80px;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* Green.gif as vertical columns on both sides */
+.frame {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 90px; /* ✅ adjust column width here */
+  background-image: url("gifs/green.gif");
+  background-repeat: repeat-y;
+  background-size: 233px;
+  z-index: 1;
+}
+
+.frame.left {
+  left: 0;
+}
+
+.frame.right {
+  right: 0;
+}
+
+/* Main blog container */
+.container {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+/* Individual blog entry */
+.entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-image: url("img/green hue.jpg");
+  background-size: 33px.33px;
+  background-repeat: repeat;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Text content inside blog post */
+.entry .text {
+  flex: 1;
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+.entry .text h2 {
+  margin: 0 0 10px;
+  color: #ffffff;
+}
+
+.entry .text .date {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.entry img {
+  width: 120px; /* ✅ adjust blog image size here */
+  height: auto;
+  border-radius: 8px;
+}

@@ -87,3 +87,23 @@ body {
   width: 250px;
   z-index: 2;
 }
+
+.blog-link {
+  position: absolute;
+  bottom: -172px;
+  left: 527px;
+  z-index: 2;
+}
+
+.blog-link img {
+  width: 300px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.blog-link img:hover {
+  transform: scale(2.08);
+}
+
