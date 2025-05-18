@@ -1,109 +1,100 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
-
+/* styles.css */
 body {
+    margin: 0;
+    padding: 0;
+    background-image: url('gifs/spark.gif');
+    background-repeat: repeat;
+    background-size: 320px 320px; 
+    text-align: center;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    animation: dropIn 1.5s ease;
+}
+
+.header img {
+    width: 850px;
+    transition: transform 0.3s ease;
+}
+
+.header a:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@keyframes dropIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-300px);
+    }
+    70% {
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Welcome page styles */
+.welcome-body {
   margin: 0;
-  font-family: sans-serif;
-  background-color: #533475;
-}
-
-header {
-  background-color: #c5cd37;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  font-size: 2rem;
-}
-
-.container {
-  text-align: center;
-  margin-top: 50px;
-}
-
-/* NEW BUTTON STYLES */
-.gif-button {
-  display: inline-block;
-  border-radius: 12px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.gif-button:hover {
-  transform: scale(1.1);
-}
-
-.button-gif-only {
-  width: 400px; /* adjust as needed */
-  height: auto;
-  display: block;
-  border-radius: 12px;
-}
-
-#center-gif {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 50;
-  pointer-events: none;
-}
-
-/* Dot default */
-.online-status {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-left: 15px;
-  background-color: #ff0000;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #ff0000;
-  transition: all 0.5s ease;
-}
-
-/* Green active dot */
-.online-status.green {
-  background-color: #28a745;
-  box-shadow: 0 0 15px #28a745;
-}
-
-/* Online text default */
-.online-text {
-  display: none;
-  font-size: 2rem;
-  font-family: "Orbitron", sans-serif;
-  color: #ff0000;
-  text-transform: uppercase;
-  margin-left: 40px;
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-/* Visible Online text */
-.online-text.visible {
-  display: inline-block;
-  opacity: 1;
-  transform: scale(1.2);
-  color: #28a745;
-}
-
-/* Header animation */
-.piyaz-header {
-  font-size: 4.5rem;
-  font-family: "Orbitron", sans-serif;
-  color: #333;
-  display: inline-flex;
+  padding: 0;
+  font-family: "BlueScreenPersonalUse", sans-serif;
+  background-image: url('gifs/pink_background.gif');
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top left;
+  background-attachment: scroll;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  position: relative;
-  animation: moveIn 2.5s ease-out;
+  height: 100vh;
+  overflow: hidden;
 }
 
-@keyframes moveIn {
-  0% {
-    transform: translateY(-100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+.content {
+  padding: 100px 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* readability box */
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.gif-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.gif-box img {
+  width: 200px; /* You can adjust this size */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.3em;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
 }

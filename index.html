@@ -1,40 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>piyaz is online</title>
-  <link rel="stylesheet" href="styles.css" />
-
-  <script defer>
-    window.addEventListener("DOMContentLoaded", () => {
-      const status = document.querySelector(".online-status");
-      const text = document.querySelector(".online-text");
-
-      status.addEventListener("mouseenter", () => {
-        status.classList.add("green");
-        text.classList.add("visible");
-
-        setTimeout(() => {
-          status.classList.remove("green");
-          text.classList.remove("visible");
-        }, 150000); // 2.5 minutes
-      });
-    });
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyaz Online</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1 class="piyaz-header">
-      Piyaz <span class="online-status"></span>
-      <span class="online-text">Online</span>
-    </h1>
-  </header>
-
-  <div class="container">
-    <a href="welcome.html" class="gif-button">
-      <img src="gifs/welcome.gif" alt="Welcome GIF" class="button-gif-only" />
-    </a>
-  </div>
+    <!-- Header with Piyaz_online.gif -->
+    <div class="header">
+       <a href="welcome.html">
+         <img src="gifs/Piyaz_online.gif" alt="Piyaz Online">
+       </a>
+    </div>
 </body>
 </html>

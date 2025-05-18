@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Piyaz</title>
+  <style>
+    body {
+      background-image: url('gifs/pink_background.gif');
+      background-repeat: repeat;
+      background-size: auto;
+      background-position: top left;
+      background-attachment: scroll;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      text-align: center;
+    }
+
+    .content {
+      padding: 2% 20px;
+      background-color: rgba(255, 255, 255, 0.8); /* readability box */
+      max-width: 800px;
+      margin: 0 auto;
+      border-radius: 15px;
+    }
+
+        .gif-box {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      }
+
+        .gif-box img {
+      width: 400px; /* Adjust size here */
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      }
+
+  </style>
 </head>
 <body>
-  <h1>hello mf 🎉</h1>
-  <div id="center-gif">
-    <img src="gifs/dog1.gif" alt="Dog GIF">
+
+  <!-- Centered GIF box at the top -->
+  <div class="gif-box">
+    <img src="gifs/blu_hair_girl.gif" alt="Blue-haired girl" />
   </div>
+
 </body>
 </html>
