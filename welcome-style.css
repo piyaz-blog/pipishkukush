@@ -72,10 +72,18 @@ body {
   z-index: 2;
 }
 
-.lavalamp {
+.baby-on-a-cat {
+  position: absolute;
+  bottom: -172px;
+  left: 627px;
+  width: 100px;
+  z-index: 2;
+}
+
+.llama {
   position: absolute;
   bottom: 112px;
-  left: 397px;
-  width: 480px;
+  left: 200px;
+  width: 250px;
   z-index: 2;
 }
