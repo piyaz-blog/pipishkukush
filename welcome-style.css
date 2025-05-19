@@ -80,6 +80,14 @@ body {
   z-index: 2;
 }
 
+.clickhere {
+  position: absolute;
+  bottom: -442px;
+  left: 140px;
+  width: 100px;
+  z-index: 5;
+}
+
 .llama {
   position: absolute;
   bottom: 112px;

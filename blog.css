@@ -5,8 +5,9 @@ body {
   background-image: url("gifs/green spark.gif");
   background-repeat: repeat;
   background-size: 80px;
-  font-family: "Jersey 10", sans-serif; /* Apply Jersey 10 as main font */
-  font-weight: 400;
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
   font-style: normal;
   position: relative;
 }
@@ -34,7 +35,7 @@ body {
 /* Main blog container */
 .container {
   max-width: 800px;
-  margin: 100px auto;
+  margin: -106px auto;
   padding: 20px;
   position: relative;
   z-index: 2;
@@ -46,7 +47,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background-image: url("img/green hue.jpg");
+  background-image: url("img/moss.jpg");
   background-size: 33px;
   background-repeat: repeat;
   padding: 20px;
@@ -66,7 +67,7 @@ body {
 .entry .text h2 {
   margin: 0 0 10px;
   color: #ffffff;
-  font-family: "Jersey 10", sans-serif; /* Apply Jersey 10 to headings */
+  font-family: "Pixelify Sans", sans-serif; 
   font-size: 52px;
   letter-spacing: 1px;
 }
@@ -81,4 +82,196 @@ body {
   width: 180px; /* ✅ adjust blog image size here */
   height: auto;
   border-radius: 8px;
+}
+
+.bstargreen {
+  position: relative;
+  bottom: -200px;
+  left: 790px;
+  width: 70px;
+  z-index: 233;
+}
+
+.lightgreen {
+  position: relative;
+  bottom: -127px;
+  left: 310px;
+  width: 30px;
+  z-index: 233;
+}
+
+.lightgreen-1 {
+  position: relative;
+  bottom: -127px;
+  left: 350px;
+  width: 30px;
+  z-index: 233;
+}
+
+.lightgreen-2 {
+  position: relative;
+  bottom: -127px;
+  left: 390px;
+  width: 30px;
+  z-index: 233;
+}
+
+.lightgreen-3 {
+  position: relative;
+  bottom: -127px;
+  left: 430px;
+  width: 30px;
+  z-index: 233;
+}
+
+.lightgreen-4 {
+  position: relative;
+  bottom: -127px;
+  left: 470px;
+  width: 30px;
+  z-index: 233;
+}
+
+.lightgreen-5 {
+  position: relative;
+  bottom: -127px;
+  left: 510px;
+  width: 30px;
+  z-index: 233;
+}
+
+.lightgreen-6 {
+  position: relative;
+  bottom: -127px;
+  left: 550px;
+  width: 30px;
+  z-index: 233;
+}
+
+.lightgreen-7 {
+  position: relative;
+  bottom: -127px;
+  left: 590px;
+  width: 30px;
+  z-index: 233;
+}
+
+.lightgreen-8 {
+  position: relative;
+  bottom: -127px;
+  left: 630px;
+  width: 30px;
+  z-index: 233;
+}
+
+.lightgreen-9 {
+  position: relative;
+  bottom: -127px;
+  left: 670px;
+  width: 30px;
+  z-index: 233;
+}
+
+.lightgreen-10 {
+  position: relative;
+  bottom: -127px;
+  left: 710px;
+  width: 30px;
+  z-index: 233;
+}
+
+.stargreenc {
+  position: relative;
+  bottom: -90px;
+  left: -65px;
+  width: 250px;
+  z-index: 233;
+}
+
+.stargreenc-1 {
+  position: relative;
+  bottom: -90px;
+  left: -65px;
+  width: 250px;
+  z-index: 233;
+}
+
+.stargreenc-2 {
+  position: relative;
+  bottom: -90px;
+  left: -65px;
+  width: 250px;
+  z-index: 233;
+}
+
+.greenskull {
+  position: relative;
+  bottom: -210px;
+  left: -330px;
+  width: 90px;
+  z-index: 233;
+}
+
+.Greenhome {
+  position: relative;
+  bottom: -192px;
+  left: -1000px;
+  width: 50px;
+  z-index: 233;
+}
+
+.fireworksGreenClr14 {
+  position: relative;
+  bottom: -252px;
+  left: -1100px;
+  width: 150px;
+  z-index: 1;
+}
+
+.mouth1 {
+  position: relative;
+  bottom: 84px;
+  left: 200px;
+  width: 180px;
+  z-index: 2333;
+}
+
+.mouth2 {
+  position: relative;
+  bottom: 154px;
+  left: 200px;
+  width: 180px;
+  z-index: 2333;
+}
+
+.mouth3 {
+  position: relative;
+  bottom: 204px;
+  left: 200px;
+  width: 180px;
+  z-index: 2333;
+}
+
+.mouth4 {
+  position: relative;
+  bottom: 164px;
+  left: 200px;
+  width: 180px;
+  z-index: 2333;
+}
+
+.mouth5 {
+  position: relative;
+  bottom: 144px;
+  left: 200px;
+  width: 180px;
+  z-index: 2333;
+}
+
+.mouth6 {
+  position: relative;
+  bottom: 84px;
+  left: 200px;
+  width: 180px;
+  z-index: 2333;
 }
