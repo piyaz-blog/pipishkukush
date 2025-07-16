@@ -7,9 +7,56 @@ body {
   background-size: 80px;
   font-family: "Pixelify Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 100;
   font-style: normal;
   position: relative;
+}
+
+/* Hide full text initially */
+.full-text {
+  display: none;
+  margin-top: 10px;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #000000; /* lighter text */
+}
+
+/* Toggle arrow styling */
+.toggle-arrow {
+  cursor: pointer;
+  font-size: 28px;
+  margin-left: 12px;
+  vertical-align: middle;
+  user-select: none;
+  transition: transform 0.3s ease;
+  color: #ffffff;
+}
+
+/* Rotate arrow when expanded */
+.entry.expanded .toggle-arrow {
+  transform: rotate(180deg);
+  color: #fff;
+}
+
+/* Show full text when expanded */
+.entry.expanded .full-text {
+  display: block;
+}
+
+/* Set Inter as the font for body text */
+.entry .text p,
+.entry .text .date,
+.entry .full-text p {
+  font-family: 'Inter', sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.0;
+  color: #000000;
+}
+
+/* Keep Pixelify Sans only for titles */
+.entry .text h2 {
+  font-family: 'Pixelify Sans', sans-serif;
 }
 
 /* Green.gif as vertical columns on both sides */
