@@ -48,10 +48,14 @@ body {
 .entry .text .date,
 .entry .full-text p {
   font-family: 'Inter', sans-serif;
-  font-size: 21px;
+  font-size: 17px;
   font-weight: 500;
   line-height: 1.0;
-  color: #000000;
+  color: #07471e;
+  position: relative;
+  background-color: rgba(201, 238, 15, 0.5); /* white with 70% opacity */
+  padding: 20px;
+  border-radius: 12px;
 }
 
 /* Keep Pixelify Sans only for titles */
