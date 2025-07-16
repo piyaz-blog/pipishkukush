@@ -29,13 +29,13 @@ body {
   vertical-align: middle;
   user-select: none;
   transition: transform 0.3s ease;
-  color: #ffffff;
+  color: #b10f8e;
 }
 
 /* Rotate arrow when expanded */
 .entry.expanded .toggle-arrow {
   transform: rotate(180deg);
-  color: #fff;
+  color: #800b61;
 }
 
 /* Show full text when expanded */
@@ -60,7 +60,7 @@ body {
 
 /* Keep Pixelify Sans only for titles */
 .entry .text h2 {
-  font-family: 'Pixelify Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Green.gif as vertical columns on both sides */
